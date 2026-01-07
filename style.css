@@ -45,3 +45,52 @@ body {
   margin-top: 15px;
   font-weight: bold;
 }
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.light {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.container {
+  background: rgba(0,0,0,.2);
+  padding: 20px;
+  border-radius: 16px;
+  width: 320px;
+  text-align: center;
+}
+
+.image-box {
+  position: relative;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.area {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  cursor: pointer;
+}
+
+.top-left { top: 0; left: 0; }
+.bottom-right { bottom: 0; right: 0; }
+
+.area.selected {
+  border: 2px solid red;
+}
