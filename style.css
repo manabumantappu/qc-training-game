@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  width: 320px;
+}
+
+.product {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.buttons button {
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons button:first-child {
+  background: #22c55e;
+  color: #022c22;
+}
+
+.buttons button:last-child {
+  background: #ef4444;
+  color: #450a0a;
+}
+
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+}
