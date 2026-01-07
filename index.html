@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>QC Inspection Game</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>QC Training Game</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark">
 
 <div class="container">
   <h1>QC Inspection Training</h1>
 
-  <img src="assets/product.png" alt="Produk" class="product">
+  <button class="toggle" onclick="toggleMode()">🌙 / ☀️</button>
 
-  <p id="question">Apakah produk ini OK atau NG?</p>
-
-  <div class="buttons">
-    <button onclick="answer('OK')">OK</button>
-    <button onclick="answer('NG')">NG</button>
+  <div class="image-box">
+    <img id="productImage">
+    <div class="area top-left" onclick="selectArea('top-left')"></div>
+    <div class="area bottom-right" onclick="selectArea('bottom-right')"></div>
   </div>
 
-  <p id="result"></p>
-  <p id="score">Score: 0</p>
+  <select id="ngType">
+    <option value="">-- Pilih NG --</option>
+    <option>キズ</option>
+    <option>汚れ</option>
+    <option>寸法不良</option>
+  </select>
+
+  <button onclick="submit()">Submit</button>
+
+  <p id="feedback"></p>
+  <p id="progress"></p>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
